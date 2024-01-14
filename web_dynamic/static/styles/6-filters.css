@@ -47,12 +47,13 @@ button:hover {
     border-right: 1px solid #DDDDDD;
 }
 .amenities {
-    height: 100%;
-    width: 25%;
+    max-height: 100%;
+    max-width: 25%;
 }
 
 .popover {
     visibility: hidden;
+    position: static;
     width: 100%;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
@@ -100,4 +101,10 @@ button:hover {
 .amenities:hover .popover,
 .locations:hover .popover {
     visibility: visible;
+}
+
+.amenities h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
